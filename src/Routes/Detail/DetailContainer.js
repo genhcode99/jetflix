@@ -2,6 +2,10 @@ import React from "react";
 import DetailPresenter from "./DetailPresenter";
 
 export default class extends React.Component {
+  constructor (prpos) {
+    super
+
+  }
   state = {
     result : null,
     error : null,
@@ -10,11 +14,14 @@ export default class extends React.Component {
 
   async componentDidMount () {
     const { id } = this.props.match.params;
+    const { pathname } = this.props.location;
     const { push } = this.props.history;
+    this.isMovie = pathname.includes("/movie/");
     const parsedId = parseInt(id);
     if(isNaN(parsedId)) {
       return push("/");
     }
+
   }
 
 

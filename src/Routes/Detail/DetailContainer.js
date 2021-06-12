@@ -5,7 +5,7 @@ import DetailPresenter from "./DetailPresenter";
 export default class extends React.Component {
   constructor (props) {
     super(props);
-    const { location : { pathname}} = props;
+    const { location : { pathname }} = props;
     this.state = {
       result : null,
       error : null,
@@ -16,7 +16,6 @@ export default class extends React.Component {
 
   async componentDidMount () {
     const { id } = this.props.match.params;
-    const { pathname } = this.props.location;
     const { push } = this.props.history;
     const { ismovie } = this.state;
     const parsedId = parseInt(id);

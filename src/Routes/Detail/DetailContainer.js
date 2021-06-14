@@ -17,14 +17,14 @@ export default class extends React.Component {
   async componentDidMount () {
     const { id } = this.props.match.params;
     const { push } = this.props.history;
-    const { ismovie } = this.state;
+    const { isMovie } = this.state;
     const parsedId = parseInt(id);
     if(isNaN(parsedId)) {
       return push("/");
     }
     let result = null;
     try {
-      if (ismovie) {
+      if (isMovie) {
         const request = await moviesApi.movieDetail(parsedId);
         result = request.data;
       } else {

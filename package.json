@@ -27,7 +27,7 @@
     "deploy": "gh-pages -d build",
     "predeploy": "npm run build"
   },
-  "homepage": "https://genhcode99.github.io/jetflix",
+  "homepage": "https://angry-easley-b7ee57.netlify.app/",
   "eslintConfig": {
     "extends": [
       "react-app",

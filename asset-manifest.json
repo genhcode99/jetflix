@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.js": "/jetflix/static/js/main.81d74ff4.chunk.js",
+    "main.js.map": "/jetflix/static/js/main.81d74ff4.chunk.js.map",
+    "runtime-main.js": "/jetflix/static/js/runtime-main.f2865a1c.js",
+    "runtime-main.js.map": "/jetflix/static/js/runtime-main.f2865a1c.js.map",
+    "static/js/2.0814cec2.chunk.js": "/jetflix/static/js/2.0814cec2.chunk.js",
+    "static/js/2.0814cec2.chunk.js.map": "/jetflix/static/js/2.0814cec2.chunk.js.map",
+    "index.html": "/jetflix/index.html",
+    "static/js/2.0814cec2.chunk.js.LICENSE.txt": "/jetflix/static/js/2.0814cec2.chunk.js.LICENSE.txt",
+    "static/media/이순신.png": "/jetflix/static/media/이순신.d9918674.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f2865a1c.js",
+    "static/js/2.0814cec2.chunk.js",
+    "static/js/main.81d74ff4.chunk.js"
+  ]
+}

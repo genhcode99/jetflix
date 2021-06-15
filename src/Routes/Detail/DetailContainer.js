@@ -8,6 +8,7 @@ export default class extends React.Component {
     const { location : { pathname }} = props;
     this.state = {
       result : null,
+      logoPath : null,
       error : null,
       loading : true,
       isMovie: pathname.includes("/movie")
@@ -31,22 +32,24 @@ export default class extends React.Component {
         const request = await tvApi.showDetail(parsedId);
         result = request.data;
       }
-    } catch {
       this.setState({ error : "Can't find anything." })
     } finally {
-      this.setState({ loading : false, result });
+      this.setState({ loading : false, result});
     }
-
+    const arrayPath = await result.production_companies.map((company)=>company.logo_path);
+    const logoPath = await arrayPath.filter((path) => path !== null);
+    this.setState({logoPath});
   }
 
 
   render () {
-    const {result, error, loading} = this.state;
+    const {result, logoPath, error, loading} = this.state;
     return (
     <DetailPresenter 
       result={result} 
       error={error}
       loading={loading}
+      logoPath={logoPath}
     />);
   }
 }

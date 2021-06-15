@@ -28,6 +28,7 @@ const MovieSlider = ({youtubeKey}) => {
       <VideoContainer>
         { youtubeKey &&
           <iframe 
+          style="z-index:10;"
           src={`http://www.youtube.com/embed/${youtubeKey}`} 
           width="100%" 
           height="100%"
